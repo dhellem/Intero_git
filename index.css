@@ -72,3 +72,32 @@ textarea {
     width: 100%;
 }
 
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 100;
+}
+
+input[type="email"]:hover + .tooltip,
+input[type="tel"]:hover + .tooltip {
+    display: block; 
+}
+
+li {
+    position: relative;
+}
+
+input[type="email"]:hover + .tooltip {
+    bottom: -20px;
+    right: 10px;
+}
+
+input[type="tel"]:hover + .tooltip {
+    bottom: -20px;
+    right: 10px;
+}
